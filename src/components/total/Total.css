@@ -1,0 +1,17 @@
+.total {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 150px;
+}
+
+.total-header {
+  color: white;
+  margin: auto;
+}
+
+.total-number {
+  color: goldenrod;
+  font-size: 120px;
+  margin: auto;
+}
