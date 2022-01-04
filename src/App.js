@@ -4,6 +4,7 @@ import Hand from './components/hand/Hand';
 import Total from './components/total/Total';
 import Bets from './components/bets/Bets';
 import Result from './components/result/Result';
+import Nav from './components/nav/Nav';
 
 class App extends Component {
   constructor(props) {
@@ -106,7 +107,7 @@ class App extends Component {
     return ( 
       <div className="App">
         <header className="App-header">
-        <h1 className="logo">Degen 510</h1>
+          <Nav />
             {(this.state.betMade ? 
               <Result 
                 bet={this.state.bet} 
