@@ -18,6 +18,16 @@
   margin: auto;
 }
 
+.bet-guess-display {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 750px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
 .hands-wrapper {
   display: flex;
   flex-direction: column;

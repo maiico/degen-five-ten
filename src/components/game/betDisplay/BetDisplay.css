@@ -1,0 +1,15 @@
+.bet-display {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.bet-display-header {
+  font-family: "VT323", monospace;
+  margin: auto;
+}
+
+.bet-display-number {
+  font-family: "VT323", monospace;
+  color: aqua;
+}

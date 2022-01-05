@@ -6,7 +6,7 @@ class Result extends Component {
         this.state = {  }
     }
 
-    renderResult() {
+    renderMessage() {
         let result;
 
         if(this.props.bet === this.props.total) {
@@ -21,7 +21,11 @@ class Result extends Component {
     render() { 
         return ( 
             <div className="result">
-               {this.renderResult()}
+               <p>{this.props.total}</p>
+               <p>{this.props.hand1}</p>
+               <p>{this.props.hand2}</p>
+               <p>{this.props.hand3}</p>
+               <p>{this.props.hand4}</p>
             </div>
          );
     }

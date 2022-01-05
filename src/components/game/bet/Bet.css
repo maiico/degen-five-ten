@@ -1,0 +1,32 @@
+.bet {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.bet-header {
+  font-family: "VT323", monospace;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.bets {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.bet-button {
+  height: auto;
+  width: 125px;
+  margin: auto;
+  padding: 10px;
+}
+
+.bet-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

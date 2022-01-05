@@ -1,0 +1,17 @@
+.lfg {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.lfg-button {
+  height: auto;
+  width: 350px;
+  margin: auto;
+}
+
+.lfg-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

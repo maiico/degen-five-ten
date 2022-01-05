@@ -1,0 +1,31 @@
+.guess {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.guess-header {
+  font-family: "VT323", monospace;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.guesses {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.guess-button {
+  height: auto;
+  width: 125px;
+  margin: auto;
+  padding: 10px;
+}
+
+.guess-button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}

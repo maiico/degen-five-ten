@@ -1,0 +1,15 @@
+.guess-display {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.guess-display-header {
+  font-family: "VT323", monospace;
+  margin: auto;
+}
+
+.guess-display-number {
+  font-family: "VT323", monospace;
+  color: aqua;
+}

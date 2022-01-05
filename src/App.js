@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import Hand from './components/hand/Hand';
-import Total from './components/total/Total';
-import Bets from './components/bets/Bets';
-import Result from './components/result/Result';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
+import Game from './components/game/Game';
+import Result from './components/result/Result';
 
 class App extends Component {
   constructor(props) {
     super(props);
+    this.setRandomHands = this.setRandomHands.bind(this);
     this.state = { 
       hand1: 0,
       hand2: 5,
       hand3: 0,
       hand4: 5,
-      bet: "",
+      bet: 0,
+      guess: "",
+      payout: 0,
       betMade: false,
-      win: 0,
-      lose: 0,
-      bets: 0
+      guessMade: false
      }
   }
 
@@ -28,19 +28,47 @@ class App extends Component {
     try{
       this.setState({
         bet: bet,
-        betMade: true,
-        bets: this.state.bets + 1
+        betMade: true
       });
+    } catch(err) {
+      console.log(err)
+    }
+  }
 
-      this.setRandomHands();
+  // set the users guess 
 
-      const total = this.calculateTotal();
+  setGuess =  async(guess) => {
+    try{
 
-      if(total === this.state.bet) {
-        this.winLoseCounter(1);
-      } else {
-        this.winLoseCounter(0);
+      // determine payout based on guess odds
+      let payout;
+
+      switch(guess) {
+        case 0:
+          payout = 16
+          break;
+        case 5:
+          payout = 4
+          break;
+        case 10:
+          payout = 2
+          break;
+        case 15:
+          payout = 4
+          break;
+        case 20:
+          payout = 16
+          break;
+        default:
+          payout = 0;
+          break;
       }
+
+      this.setState({
+        guess: guess,
+        payout: payout,
+        guessMade: true
+      })
 
     } catch(err) {
       console.log(err)
@@ -76,31 +104,10 @@ class App extends Component {
         hand1: hand1,
         hand2: hand2,
         hand3: hand3,
-        hand4: hand4
+        hand4: hand4,
+        total: hand1 + hand2 + hand3 + hand4
       })
 
-  }
-
-  // calculate the total from each hand
-
-  calculateTotal() {
-    const total = this.state.hand1 + this.state.hand2 + this.state.hand3 + this.state.hand4
-
-    return total;
-  }
-
-  // win lose counter
-
-  winLoseCounter(result) {
-    if(result === 1) {
-      this.setState({
-        win: this.state.win + 1
-      })
-    } else {
-      this.setState({
-        lose: this.state.lose + 1
-      })
-    }
   }
 
   render() { 
@@ -108,35 +115,32 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Nav />
-            {(this.state.betMade ? 
-              <Result 
-                bet={this.state.bet} 
-                total={this.calculateTotal()}
-              /> : null)}
-            <Total 
-              hand1={this.state.hand1}
-              hand2={this.state.hand2}
-              hand3={this.state.hand3}
-              hand4={this.state.hand4}
-            />
-            <div className="hands-wrapper">
-              <div className="hand-one-two">
-                <Hand hand={this.state.hand1} />
-                <Hand hand={this.state.hand2} />
-              </div>
-              <div className="hand-three-four">
-                <Hand hand={this.state.hand3} />
-                <Hand hand={this.state.hand4} />
-              </div>
-            </div>
-            <div className="analytics">
-              <p className="analytics-txt">win: {this.state.win}</p>
-              <p className="analytics-txt">lose: {this.state.lose}</p>
-              <p className="analytics-txt">bets: {this.state.bets}</p>
-            </div>
-            <Bets 
-              setBet={this.setBet}
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={
+                <Game
+                  bet={this.state.bet} 
+                  guess={this.state.guess}
+                  betMade={this.state.betMade}
+                  guessMade={this.state.guessMade}
+                  setBet={this.setBet}
+                  setGuess={this.setGuess}
+                  setRandomHands={this.setRandomHands}
+                />} 
               />
+              <Route path="/result" element={
+                <Result 
+                  bet={this.state.bet}
+                  hand1={this.state.hand1}
+                  hand2={this.state.hand2}
+                  hand3={this.state.hand3}
+                  hand4={this.state.hand4}
+                  total={this.state.total}
+
+                />
+              }/>
+            </Routes>
+          </BrowserRouter>
         </header>
     </div>
 
