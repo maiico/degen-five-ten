@@ -1,0 +1,20 @@
+.play-again {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.play-again-header {
+  font-family: "VT323", monospace;
+  color: white;
+  margin: auto;
+  font-size: 75px;
+}
+
+.play-again-header:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: aqua;
+}

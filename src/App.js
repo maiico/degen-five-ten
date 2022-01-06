@@ -22,6 +22,22 @@ class App extends Component {
      }
   }
 
+  // reset function to reset all game variables 
+
+  resetGame = async () => {
+    this.setState({
+      hand1: 0,
+      hand2: 5,
+      hand3: 0,
+      hand4: 5,
+      bet: 0,
+      guess: "",
+      payout: 0,
+      betMade: false,
+      guessMade: false
+    })
+  }
+
   // set bet 
 
   setBet = async(bet) => {
@@ -126,17 +142,20 @@ class App extends Component {
                   setBet={this.setBet}
                   setGuess={this.setGuess}
                   setRandomHands={this.setRandomHands}
+                  resetGame={this.resetGame}
                 />} 
               />
               <Route path="/result" element={
                 <Result 
                   bet={this.state.bet}
+                  guess={this.state.guess}
                   hand1={this.state.hand1}
                   hand2={this.state.hand2}
                   hand3={this.state.hand3}
                   hand4={this.state.hand4}
                   total={this.state.total}
-
+                  payout={this.state.payout}
+                  resetGame={this.resetGame}
                 />
               }/>
             </Routes>

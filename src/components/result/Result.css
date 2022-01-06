@@ -1,0 +1,130 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 30%;
+  max-width: 600px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.msg-txt {
+  font-family: "VT323", monospace;
+  color: aqua;
+  font-size: larger;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.total-header {
+  font-family: "VT323", monospace;
+  color: #f8b152;
+  margin: auto;
+}
+
+.total-txt {
+  font-family: "VT323", monospace;
+  color: white;
+  margin: auto;
+  font-size: 125px;
+}
+
+.bet-guess-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.result-bet {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 50%;
+}
+
+.result-guess {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 50%;
+}
+
+.bet-guess-header {
+  font-family: "VT323", monospace;
+  color: white;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.bet-guess-txt {
+  font-family: "VT323", monospace;
+  color: aqua;
+  margin: auto;
+}
+
+.hands-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-bottom: 25px;
+  height: auto;
+  width: 100%;
+}
+
+.hand-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.hand-img {
+  height: auto;
+  width: 60px;
+  margin: auto;
+}
+
+.hand-txt {
+  font-family: "VT323", monospace;
+  color: white;
+  margin: auto;
+}
+
+.play-again-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.play-again-header {
+  font-family: "VT323", monospace;
+  color: white;
+  margin: auto;
+  font-size: 75px;
+}
+
+.play-again-header:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  color: aqua;
+}

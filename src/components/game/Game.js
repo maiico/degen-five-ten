@@ -11,6 +11,12 @@ class Game extends Component {
         super(props);
         this.state = {  }
     }
+
+    componentDidMount() {
+        //reset the game every time it is mounted
+        this.props.resetGame()
+    }
+
     render() { 
         return ( 
             <div className="game">
