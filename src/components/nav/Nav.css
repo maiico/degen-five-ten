@@ -38,14 +38,18 @@
 .list-item:hover {
   cursor: pointer;
   transform: scale(1.05);
+  margin: auto;
 }
 
 .nav-item {
   margin-right: 10px;
+  margin: auto;
 }
 
 .nav-txt {
   font-family: "VT323", monospace;
+  text-decoration: none;
+  color: white;
   margin: auto;
 }
 
@@ -53,8 +57,13 @@
   color: aqua;
 }
 
+.nav-txt.active {
+  color: aqua;
+}
+
 .socials {
   height: 25px;
   width: 25px;
   margin: auto;
+  margin-top: 12px;
 }

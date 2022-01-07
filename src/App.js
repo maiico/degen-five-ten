@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Game from './components/game/Game';
 import Result from './components/result/Result';
+import FAQ from './components/faq/FAQ';
 
 class App extends Component {
   constructor(props) {
@@ -130,8 +131,8 @@ class App extends Component {
     return ( 
       <div className="App">
         <header className="App-header">
-          <Nav />
           <BrowserRouter>
+            <Nav />
             <Routes>
               <Route path="/" element={
                 <Game
@@ -158,6 +159,7 @@ class App extends Component {
                   resetGame={this.resetGame}
                 />
               }/>
+              <Route path="/FAQ" element={<FAQ />}/>
             </Routes>
           </BrowserRouter>
         </header>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Result.css';
 import OpenHand from '../images/open_hand.png';
 import ClosedHand from '../images/closed_hand.png';
-import { Link } from 'react-router-dom';
 import PlayAgain from './playAgain/PlayAgain';
 
 class Result extends Component {

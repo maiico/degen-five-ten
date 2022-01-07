@@ -24,7 +24,7 @@ class LFG extends Component {
   }
     render() { 
         return ( 
-            <Link to="/result" >
+            <Link to="/result">
                 <div className="lfg">
                     {this.renderLFG(this.props.betMade, this.props.guessMade)}
                 </div>
