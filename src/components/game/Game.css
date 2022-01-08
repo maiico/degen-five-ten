@@ -2,4 +2,21 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: auto;
+  width: 100%;
+}
+
+.bet-guess-display {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bet-guess-display {
+    flex-direction: column;
+  }
 }

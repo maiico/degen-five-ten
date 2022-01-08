@@ -15,3 +15,10 @@
   cursor: pointer;
   transform: scale(1.05);
 }
+
+@media only screen and (max-width: 600px) {
+  .lfg-button {
+    height: auto;
+    width: 250px;
+  }
+}

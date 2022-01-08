@@ -12,7 +12,7 @@
   justify-content: space-between;
   height: auto;
   width: 100%;
-  max-width: 80%;
+  max-width: 1700px;
   margin: auto;
 }
 
@@ -51,6 +51,7 @@
   text-decoration: none;
   color: white;
   margin: auto;
+  font-size: larger;
 }
 
 .nav-txt:hover {
@@ -65,5 +66,15 @@
   height: 25px;
   width: 25px;
   margin: auto;
-  margin-top: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    height: 45px;
+  }
+
+  .logo {
+    height: auto;
+    width: 120px;
+  }
 }

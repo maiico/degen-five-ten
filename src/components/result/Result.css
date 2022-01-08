@@ -3,7 +3,7 @@
   flex-direction: column;
   margin: auto;
   height: auto;
-  width: 30%;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -11,6 +11,8 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: auto;
+  width: 100%;
 }
 
 .msg-txt {
@@ -127,4 +129,13 @@
   cursor: pointer;
   transform: scale(1.05);
   color: aqua;
+}
+
+@media only screen and (max-width: 600px) {
+  .result {
+    height: 100%;
+  }
+  .message {
+    margin-bottom: 25px;
+  }
 }

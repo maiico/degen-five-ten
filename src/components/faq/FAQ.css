@@ -2,9 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 50%;
   max-width: 1020px;
-  min-width: 510px;
   height: auto;
   text-align: left;
   justify-content: left;
@@ -15,12 +13,16 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: auto;
+  width: 100%;
 }
 
 .question {
   display: flex;
   flex-direction: column;
   text-align: left;
+  height: auto;
+  width: 100%;
 }
 
 .faq-header {
@@ -56,4 +58,39 @@
 .lfg-faq:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .faq {
+    width: 100%;
+  }
+
+  .faq-header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .faq-body {
+    width: 100%;
+  }
+
+  .question {
+    width: 100%;
+  }
+
+  .faq-subhead {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .faq-txt {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .lfg-faq {
+    height: auto;
+    width: 250px;
+    margin-top: 25px;
+  }
 }

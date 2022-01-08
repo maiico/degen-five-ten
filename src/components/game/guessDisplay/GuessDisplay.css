@@ -13,3 +13,9 @@
   font-family: "VT323", monospace;
   color: aqua;
 }
+
+@media only screen and (max-width: 600px) {
+  .guess-display {
+    margin-bottom: 25px;
+  }
+}

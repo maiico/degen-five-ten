@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   margin: auto;
+  height: auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 .guess-header {
@@ -16,6 +19,8 @@
   height: auto;
   width: 100%;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .guess-button {
@@ -28,4 +33,23 @@
 .guess-button:hover {
   cursor: pointer;
   transform: scale(1.05);
+}
+
+@media only screen and (max-width: 600px) {
+  .guess-button {
+    height: auto;
+    width: 60px;
+    margin: auto;
+    margin-right: -5px;
+    margin-left: -5px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .guess-button {
+    height: auto;
+    width: 48px;
+    margin: auto;
+    margin-left: 1px;
+  }
 }
