@@ -9,17 +9,17 @@ function FAQ(props) {
             <h1 className="faq-header">Frequently Asked Questions</h1>
             <div className="faq-body">
                 <div className="question">
-                    <h2 className="faq-subhead">What is Degen 5/10 (DTF)?</h2>
+                    <h2 className="faq-subhead">What is Degen 5/10 (DFT)?</h2>
                         <p className="faq-txt">
                             Degen 5/10 is a smart contract that allows users to place bets with their Solana tokens. 
-                            Odds are 1/2, 1/4 and 1/16 with a 3.5% fee that is distributed between holders, team and house wallet.
+                            Odds are 1/2, 1/4 and 1/16 with a 3.5% fee that is distributed between holders and the DCF Team.
                         </p>
                 </div>
                 <div className="question">
-                    <h2 className="faq-subhead">How do I know I can Trust DTF?</h2>
+                    <h2 className="faq-subhead">How do I know I can Trust DFT?</h2>
                         <p className="faq-txt">
                             It's a smart contract on the solana blockchain, all can be found through the blockchain. Plus you're probably a degen so you'll play regardless.
-                            The DCF Team and DCF NFT holders have aligned incentives for the game to have 1/2, 1/4 and 1/16 odds and paid out accordingly (x2,x4,16x).
+                            The DFT Team and DFT NFT holders have aligned incentives for the game to have 1/2, 1/4 and 1/16 odds and paid out accordingly (x2,x4,16x).
                             Our house and fee wallets are all public and every transaction can be reviewed by anyone.
                         </p>
                 </div>
