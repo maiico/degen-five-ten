@@ -25,6 +25,23 @@
   width: 100%;
 }
 
+.faq-payouts {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.faq-bets {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: auto;
+  width: 100%;
+}
+
 .faq-header {
   color: #f8b152;
   font-family: "VT323", monospace;
@@ -41,6 +58,13 @@
 .faq-txt {
   color: white;
   font-family: "VT323", monospace;
+}
+
+.odds-txt {
+  color: white;
+  font-family: "VT323", monospace;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .lfg-faq-wrapper {
@@ -84,6 +108,11 @@
   }
 
   .faq-txt {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .odds-txt {
     padding-right: 10px;
     padding-left: 10px;
   }

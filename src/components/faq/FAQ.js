@@ -11,9 +11,29 @@ function FAQ(props) {
                 <div className="question">
                     <h2 className="faq-subhead">What is Degen 5/10 (DFT)?</h2>
                         <p className="faq-txt">
-                            Degen 5/10 is a smart contract that allows users to place bets with their Solana tokens. 
-                            Odds are 1/2, 1/4 and 1/16 with a 3.5% fee that is distributed between holders and the DCF Team.
+                            Degen 5/10 is a game that allows users to play and place bets with their Solana tokens. 
+                            Odds are 1/2, 1/4 and 1/16 with a 3.5% fee that is distributed between holders and the DFT Team.
                         </p>
+                </div>
+                <div className="question">
+                    <h2 className="faq-subhead">How to play Degen 5/10 (DFT)?</h2>
+                        <p className="faq-txt">
+                            Bet $SOL on the total outcome of four hands. After a bet is placed and a guess is made press the LFG button. Each hand will have a 50/50 chance to either be open  (5) or closed (0). 
+                            If your guess matches the total from all four hands congratulations you won. Otherwise, better luck next time degen.
+                        </p>
+                        <div className="faq-payouts">
+                            <p className="odds-txt">Payout rates based on odds:</p>
+                            <p className="odds-txt">0 = x16</p>
+                            <p className="odds-txt">5 = x4</p>
+                            <p className="odds-txt">10 = x2</p>
+                            <p className="odds-txt">15 = x4</p>
+                            <p className="odds-txt">20 = x16</p>
+                        </div>
+                        <div className="faq-bets">
+                            <p className="odds-txt">Bets:</p>
+                            <p className="odds-txt">0.05 $SOL</p>
+                            <p className="odds-txt">0.1 $SOL</p> 
+                        </div> 
                 </div>
                 <div className="question">
                     <h2 className="faq-subhead">How do I know I can Trust DFT?</h2>
