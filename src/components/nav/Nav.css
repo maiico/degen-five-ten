@@ -68,6 +68,19 @@
   margin: auto;
 }
 
+.discord-container {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.disc-txt {
+  font-family: "VT323", monospace;
+  font-size: small;
+  text-decoration: none;
+  color: aqua;
+  margin: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .nav {
     height: 45px;

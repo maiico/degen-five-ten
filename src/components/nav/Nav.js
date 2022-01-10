@@ -21,9 +21,10 @@ function Nav(props) {
                         </NavLink>
                     </li>
                     <li className="list-item">
-                        <a href="https://discord.gg/JWbbCFff5f" target="_blank" rel="noopener noreferrer">
+                        <div className="discord-container">
                             <img className="socials" src={Discord} alt="discord" />
-                        </a>
+                            <p className="disc-txt">(closed)</p>
+                        </div>
                     </li>
                     <li className="list-item">
                         <a href="https://twitter.com/Degen510" target="_blank" rel="noopener noreferrer">
