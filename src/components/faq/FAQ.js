@@ -19,7 +19,7 @@ function FAQ(props) {
                     <h2 className="faq-subhead">How to play Degen 5/10 (DFT)?</h2>
                         <p className="faq-txt">
                             Place an amount of $SOL on the total outcome of four hands. After the $SOL is placed and a guess is made, press the LFG button. Each hand will have a 50/50 chance to either be open  (5) or closed (0). 
-                            If your guess matches the total from all four hands congratulations you won. Otherwise, better luck next time degen.
+                            If your guess matches the total from all four hands, congratulations you won. Otherwise, better luck next time degen.
                         </p>
                         <div className="faq-payouts">
                             <p className="odds-txt">Payout rates based on odds:</p>
