@@ -78,7 +78,7 @@ class Result extends Component {
                 </div>
                 <div className="bet-guess-wrapper">
                     <div className="result-bet">
-                        <h1 className="bet-guess-header">Bet</h1>
+                        <h1 className="bet-guess-header">Amount</h1>
                         <h2 className="bet-guess-txt">{this.props.bet}&nbsp;SOL</h2>
                     </div>
                     <div className="result-guess">

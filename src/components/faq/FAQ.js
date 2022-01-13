@@ -11,14 +11,14 @@ function FAQ(props) {
                 <div className="question">
                     <h2 className="faq-subhead">What is Degen 5/10 (DFT)?</h2>
                         <p className="faq-txt">
-                            Degen 5/10 is a game that allows users to play and place bets with their Solana tokens. 
+                            Degen 5/10 is a game that allows users to play 5/10 with their Solana tokens. 
                             Odds are 1/2, 1/4 and 1/16 with a 3.5% fee that is distributed between holders and the DFT Team.
                         </p>
                 </div>
                 <div className="question">
                     <h2 className="faq-subhead">How to play Degen 5/10 (DFT)?</h2>
                         <p className="faq-txt">
-                            Bet $SOL on the total outcome of four hands. After a bet is placed and a guess is made press the LFG button. Each hand will have a 50/50 chance to either be open  (5) or closed (0). 
+                            Place an amount of $SOL on the total outcome of four hands. After the $SOL is placed and a guess is made, press the LFG button. Each hand will have a 50/50 chance to either be open  (5) or closed (0). 
                             If your guess matches the total from all four hands congratulations you won. Otherwise, better luck next time degen.
                         </p>
                         <div className="faq-payouts">
@@ -30,7 +30,7 @@ function FAQ(props) {
                             <p className="odds-txt">20 = x16</p>
                         </div>
                         <div className="faq-bets">
-                            <p className="odds-txt">Bets:</p>
+                            <p className="odds-txt">Amounts:</p>
                             <p className="odds-txt">0.05 $SOL</p>
                             <p className="odds-txt">0.1 $SOL</p> 
                         </div> 
@@ -52,7 +52,7 @@ function FAQ(props) {
                 <div className="question">
                     <h2 className="faq-subhead">Fee Wallet</h2>
                         <p className="faq-txt">
-                            TBA when betting is live.
+                            TBA when SOL connection is live.
                         </p>
                 </div>
                 <div className="question">

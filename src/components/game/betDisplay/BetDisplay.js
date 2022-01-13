@@ -11,7 +11,7 @@ class BetDisplay extends Component {
         let betNumber;
 
         if(bet === 0) {
-            betNumber = <h2 className="bet-display-number">Make a bet.</h2>
+            betNumber = <h2 className="bet-display-number">Choose Amount.</h2>
         } else {
             betNumber = <h2 className="bet-display-number">{this.props.bet}&nbsp;SOL</h2>
         }
@@ -22,7 +22,7 @@ class BetDisplay extends Component {
     render() { 
         return ( 
             <div className="bet-display">
-                <h1 className="bet-display-header">Bet</h1>
+                <h1 className="bet-display-header">SOL</h1>
                 {this.renderBet(this.props.bet)}
             </div>
          );
