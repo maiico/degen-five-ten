@@ -46,7 +46,7 @@ function FAQ(props) {
                 <div className="question">
                     <h2 className="faq-subhead">House Wallet</h2>
                         <p className="faq-txt">
-                            TBA when betting is live.
+                            TBA when SOL connection is live.
                         </p>
                 </div>
                 <div className="question">
