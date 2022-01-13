@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/nav/Nav';
 import Game from './components/game/Game';
 import Result from './components/result/Result';
@@ -131,7 +131,7 @@ class App extends Component {
     return ( 
       <div className="App">
         <header className="App-header">
-          <BrowserRouter>
+          <HashRouter>
             <Nav />
             <Routes>
               <Route path="/" element={
@@ -161,7 +161,7 @@ class App extends Component {
               }/>
               <Route path="/FAQ" element={<FAQ />}/>
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </header>
     </div>
 
