@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc384744.css",
-    "main.js": "/static/js/main.fde34b14.js",
+    "main.css": "/static/css/main.f13e8487.css",
+    "main.js": "/static/js/main.1fce98ca.js",
     "static/media/open_hand.png": "/static/media/open_hand.d82b4ac20cd87600db22.png",
     "static/media/closed_hand.png": "/static/media/closed_hand.f16eee94326b37edd8a0.png",
+    "static/media/10_button.png": "/static/media/10_button.abb704feac151f3d4dbd.png",
     "static/media/20_button.png": "/static/media/20_button.07fb463942fb63bd40e1.png",
     "static/media/15_button.png": "/static/media/15_button.44d1adc24daa107f6125.png",
-    "static/media/10_button.png": "/static/media/10_button.077169884c0e56365d73.png",
     "static/media/0_button.png": "/static/media/0_button.67d1421bb198ebc477cb.png",
     "static/media/5_button.png": "/static/media/5_button.f5b7bde7eae83a8ae815.png",
     "static/media/lfg_button.png": "/static/media/lfg_button.a96dbccabfa1a47ff98f.png",
     "static/media/005SOL_button.png": "/static/media/005SOL_button.a0ab2af784e0a91d5906.png",
     "static/media/01SOL_button.png": "/static/media/01SOL_button.b14591cc77eb279ea820.png",
     "index.html": "/index.html",
-    "main.dc384744.css.map": "/static/css/main.dc384744.css.map",
-    "main.fde34b14.js.map": "/static/js/main.fde34b14.js.map"
+    "main.f13e8487.css.map": "/static/css/main.f13e8487.css.map",
+    "main.1fce98ca.js.map": "/static/js/main.1fce98ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc384744.css",
-    "static/js/main.fde34b14.js"
+    "static/css/main.f13e8487.css",
+    "static/js/main.1fce98ca.js"
   ]
 }
