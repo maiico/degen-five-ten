@@ -68,7 +68,7 @@ class App extends Component {
           payout = 4
           break;
         case 10:
-          payout = 2
+          payout = 2.25
           break;
         case 15:
           payout = 4

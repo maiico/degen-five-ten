@@ -24,9 +24,9 @@ class Game extends Component {
                     <BetDisplay bet={this.props.bet} />
                     <GuessDisplay guess={this.props.guess} />
                 </div>
-                <LFG betMade={this.props.betMade} guessMade={this.props.guessMade} setRandomHands={this.props.setRandomHands}/>
                 <Bet setBet={this.props.setBet}/>
                 <Guess setGuess={this.props.setGuess}/>
+                <LFG betMade={this.props.betMade} guessMade={this.props.guessMade} setRandomHands={this.props.setRandomHands}/>
             </div>
          );
     }
