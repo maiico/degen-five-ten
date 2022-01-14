@@ -1,6 +1,6 @@
-# Welcome to DegenFiveTen!!
+# Welcome to DegenFiveTen!
 
-This is a Web3 attempt at recreating the famous chinese drinking game known as 5-10, essentially four hands are thrown which the option of having 0 fingers (closed) or 5 fingers (open) randomly - at which point the fingers are summed up - ranging from 0 to 20 fingers potentially.
+This is a Web3 attempt at recreating the famous drinking game known as 5-10, essentially four hands are thrown which the option of having 0 fingers (closed) or 5 fingers (open) randomly - at which point the fingers are summed up - ranging from 0 to 20 fingers potentially.
 
 (Sum of 0) -> all hands closed -> 1/16 odds
 
